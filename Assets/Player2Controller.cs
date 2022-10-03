@@ -6,19 +6,19 @@ using UnityEngine.InputSystem;
 public class Player2Controller : MonoBehaviour
 {
     //create private internal references
-    private InputActions inputActions;
+    private InputActions2 inputActions;
     private InputAction movement;
     
     Rigidbody rb;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>(); //get rigidbody, responsible for enabling collision with other colliders
-        inputActions = new InputActions(); //create new InputActions
+        inputActions = new InputActions2(); //create new InputActions
     }
     //called when script enabled
     private void OnEnable()
     {
-        movement = inputActions.Player.Movement; //get reference to movement action
+        movement = inputActions.Player2.Movement; //get reference to movement action
         movement.Enable();
         //create a DoJump callback function
         //DoJump automatically called when Jump binding performed

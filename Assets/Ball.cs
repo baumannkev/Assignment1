@@ -29,7 +29,7 @@ public class Ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        x = -0.1f;
+        x = -0.05f;
         y = 0.0f;
     }
 
